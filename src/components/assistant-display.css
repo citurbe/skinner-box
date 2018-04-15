@@ -8,6 +8,27 @@
     display: flex;
 }
 
+.overlay {
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    width: 290px;
+    height: 150px;
+    position:fixed;
+    margin-left: 10px;
+    border: 5px solid gray;
+}
+
+.active {
+    display: none;
+}
+
+.disabled {
+    display: block;
+}
+
+
+
 .assistant-image {
     height: 100px;
     width: 100px;

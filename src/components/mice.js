@@ -28,6 +28,7 @@ class Mice extends React.Component {
             fpps={this.props.fpps}
             click={this.buy.bind(this)}
             image={mouse}
+            active={this.props.pellets >= this.props.next}
             text="Push the lever so you don't have to"
             />
         );

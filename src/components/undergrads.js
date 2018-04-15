@@ -28,6 +28,7 @@ class Undergrads extends React.Component {
             fpps={this.props.fpps}
             click={this.buy.bind(this)}
             image={undergrad}
+            active={this.props.pellets >= this.props.next}
             text="Psych 101 students are require to participate in a lab experiment every semester. Amazingly, pulling this lever qualifies"
             />
         );

@@ -27,6 +27,7 @@ class Grads extends React.Component {
             next={this.props.next}
             fpps={this.props.fpps}
             click={this.buy.bind(this)}
+            active={this.props.pellets >= this.props.next}
             image={grad}
             text="Grad students are hollow shells of their former selves, desperately seeking approval. They'll probably pull a lever for us"
             />

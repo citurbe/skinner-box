@@ -28,6 +28,7 @@ class Volunteer extends React.Component {
             fpps={this.props.fpps}
             click={this.buy.bind(this)}
             image={volunteer}
+            active={this.props.pellets >= this.props.next}
             text="They signed up for this. Let's not think too hard about why"
             />
         );

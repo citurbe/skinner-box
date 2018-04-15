@@ -3,7 +3,10 @@ import './assistant-display.css';
 
 export const AssistantDisplay = (props) => {
     return (
+        <div>
+        <div className={"overlay "+ (props.active ? 'active': 'disabled')}> </div>
         <button onClick={props.click} className="assistant-border">
+        
             <div className="stats">
             
                 <p> owned: { props.owned }</p>
@@ -16,6 +19,8 @@ export const AssistantDisplay = (props) => {
                     <p className="name">{ props.name } </p>
                     <p>{ props.text }</p>
                 </div>
+          
         </button>
+        </div>
     );
 }

@@ -28,6 +28,7 @@ class Rats extends React.Component {
             fpps={this.props.fpps}
             click={this.buy.bind(this)}
             image={rat}
+            active={this.props.pellets >= this.props.next}
             text="Much smarter than mice. Let's harness that intelligence for more lever pulling"
             />
         );
