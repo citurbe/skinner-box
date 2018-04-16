@@ -29,7 +29,7 @@ class Grads extends React.Component {
             click={this.buy.bind(this)}
             active={this.props.pellets >= this.props.next}
             image={grad}
-            text="Grad students are hollow shells of their former selves, desperately seeking approval. They'll probably pull a lever for us"
+            text="Grad students are hollow shells of their former selves, desperately seeking approval. They'll probably pull a lever for us."
             />
         );
     }

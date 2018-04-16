@@ -38,8 +38,13 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+        <div className="title">
           <h1 className="App-title">Skinner Box</h1>
           <h3>Let's not kid ourselves about what we're doing here</h3>
+        </div>
+        <div className="toolbar">
+          <button>Save</button>
+        </div>
         </header>
         <div className="container">
           <div className="apparatus">

@@ -28,7 +28,7 @@ class Pigeons extends React.Component {
             click={this.buy.bind(this)}
             image={pigeon}
             active={this.props.pellets >= this.props.next}
-            text="Able to find their way home at distances over a thousand miles. Let's have then pull this lever"
+            text="Able to find their way home at distances over a thousand miles. Let's have them pull this lever."
             />
         );
     }

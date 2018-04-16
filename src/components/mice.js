@@ -29,7 +29,7 @@ class Mice extends React.Component {
             click={this.buy.bind(this)}
             image={mouse}
             active={this.props.pellets >= this.props.next}
-            text="Push the lever so you don't have to"
+            text="Push the lever so you don't have to."
             />
         );
     }

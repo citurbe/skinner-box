@@ -29,7 +29,7 @@ class Chimps extends React.Component {
             click={this.buy.bind(this)}
             image={chimp}
             active={this.props.pellets >= this.props.next}
-            text="A recent study found that chimpanzees solve puzzles for entertainment. So, I don't know, maybe they'll like pulling this lever"
+            text="A recent study found that chimpanzees solve puzzles for entertainment. So, I don't know, maybe they'll like pulling this lever."
             />
         );
     }

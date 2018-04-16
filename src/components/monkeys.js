@@ -29,7 +29,7 @@ class Monkeys extends React.Component {
             click={this.buy.bind(this)}
             image={monkey}
             active={this.props.pellets >= this.props.next}
-            text="Monkeys went to space before humans! Let's have them pull a lever for a while"
+            text="Monkeys went to space before humans! Let's have them pull a lever for a while."
             />
         );
     }

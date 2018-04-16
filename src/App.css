@@ -9,9 +9,10 @@
 
 .App-header {
   background-color: #222;
-  height: 70px;
+  height: 100px;
   padding: 20px;
   color: white;
+  display: flex;
 }
 
 .App-title {
@@ -20,6 +21,15 @@
 
 .App-intro {
   font-size: large;
+}
+
+.title {
+  margin-left: 30%;
+}
+
+.toolbar {
+  position: fixed;
+  right: 50px;
 }
 
 @keyframes App-logo-spin {
