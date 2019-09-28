@@ -65,15 +65,27 @@ class App extends Component {
             </div>
           </div>
           <div className="assistants">
-            {(this.props.assistants.mice.owned > 0 ||
-              this.props.pellets >= lookup.mice.baseCost) && <Mice />}
-            {!!this.props.assistants.mice.owned && <Rats />}
+            {(this.props.godMode ||
+              (this.props.assistants.mice.owned > 0 ||
+                this.props.pellets >= lookup.mice.baseCost)) && <Mice />}
+            {(this.props.godMode || !!this.props.assistants.mice.owned) && (
+              <Rats />
+            )}
             {!!this.props.assistants.rats.owned && <Pigeons />}
-            {!!this.props.assistants.pigeons.owned && <Monkeys />}
-            {!!this.props.assistants.monkeys.owned && <Chimps />}
-            {!!this.props.assistants.chimps.owned && <Undergrads />}
-            {!!this.props.assistants.undergrads.owned && <Grads />}
-            {!!this.props.assistants.grads.owned && <Volunteers />}
+            {(this.props.godMode || !!this.props.assistants.pigeons.owned) && (
+              <Monkeys />
+            )}
+            {(this.props.godMode || !!this.props.assistants.monkeys.owned) && (
+              <Chimps />
+            )}
+            {(this.props.godMode || !!this.props.assistants.chimps.owned) && (
+              <Undergrads />
+            )}
+            {(this.props.godMode ||
+              !!this.props.assistants.undergrads.owned) && <Grads />}
+            {(this.props.godMode || !!this.props.assistants.grads.owned) && (
+              <Volunteers />
+            )}
           </div>
         </div>
       </div>
